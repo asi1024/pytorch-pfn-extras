@@ -27,6 +27,7 @@ class ProgressBar(extension.Extension):
 
     def __init__(self, training_length=None, update_interval=100,
                  bar_length=50, out=sys.stdout):
+        super().__init__()
         self._training_length = training_length
         self._update_interval = update_interval
         self._bar_length = bar_length

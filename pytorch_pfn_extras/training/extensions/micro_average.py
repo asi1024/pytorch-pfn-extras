@@ -63,6 +63,7 @@ class MicroAverage(extension.Extension):
     def __init__(
             self, numerator_key, denominator_key, result_key,
             trigger=(1, 'epoch')):
+        super().__init__()
         self._trigger = trigger_module.get_trigger(trigger)
 
         self._numerator_key = numerator_key

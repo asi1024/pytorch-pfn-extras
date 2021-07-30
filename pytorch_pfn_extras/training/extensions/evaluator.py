@@ -76,10 +76,9 @@ class Evaluator(extension.Extension):
     default_name = 'validation'
     priority = extension.PRIORITY_WRITER
 
-    name = None
-
     def __init__(
             self, iterator, target, eval_hook=None, eval_func=None, **kwargs):
+        super().__init__()
         progress_bar = kwargs.get('progress_bar', False)
         metrics = kwargs.get('metrics', [])
 

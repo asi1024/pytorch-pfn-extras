@@ -69,6 +69,7 @@ class PrintReport(extension.Extension):
     """
 
     def __init__(self, entries=None, log_report='LogReport', out=sys.stdout):
+        super().__init__()
         if entries is None:
             self._infer_entries = True
             entries = []

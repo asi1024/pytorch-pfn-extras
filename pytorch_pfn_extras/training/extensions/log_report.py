@@ -100,6 +100,7 @@ keys=None, trigger=(1, 'epoch'), postprocess=None, filename='log', writer=None)
 
     def __init__(self, keys=None, trigger=(1, 'epoch'), postprocess=None,
                  filename=None, append=False, format=None, **kwargs):
+        super().__init__()
         self._keys = keys
         self._trigger = trigger_module.get_trigger(trigger)
         self._postprocess = postprocess

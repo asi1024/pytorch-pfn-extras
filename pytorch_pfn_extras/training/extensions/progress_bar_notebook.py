@@ -33,6 +33,7 @@ class ProgressBarNotebook(extension.Extension):
 
     def __init__(self, training_length=None, update_interval=100,
                  bar_length=50, out=sys.stdout):
+        super().__init__()
         self._training_length = training_length
         if training_length is not None:
             self._init_status_template()

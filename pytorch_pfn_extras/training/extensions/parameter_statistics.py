@@ -81,6 +81,7 @@ class ParameterStatistics(extension.Extension):
     def __init__(self, links, statistics='default',
                  report_params=True, report_grads=True, prefix=None,
                  trigger=(1, 'epoch'), skip_nan_params=False):
+        super().__init__()
 
         if not isinstance(links, (list, tuple)):
             links = links,

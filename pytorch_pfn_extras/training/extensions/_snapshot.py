@@ -316,6 +316,7 @@ class _Snapshot(extension.Extension):
             snapshot_on_error=False, n_retains=-1, autoload=False,
             savefun=None,
             transform_models=None):
+        super().__init__()
         if condition is None:
             condition = _always_true
         self._target = target

@@ -205,6 +205,7 @@ grid=True)
                      0, 0.13, 2.28, 15.87, 50, 84.13, 97.72, 99.87, 100),
                  trigger=(1, 'epoch'), filename=None,
                  figsize=None, marker=None, grid=True, **kwargs):
+        super().__init__()
 
         _check_available()
 

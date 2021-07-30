@@ -114,6 +114,7 @@ filename='plot.png', marker='x', grid=True)
     def __init__(self, y_keys, x_key='iteration', trigger=(1, 'epoch'),
                  postprocess=None, filename=None, marker='x',
                  grid=True, **kwargs):
+        super().__init__()
 
         file_name = kwargs.get('file_name', 'plot.png')
         if filename is None:

@@ -43,6 +43,7 @@ class LRScheduler(extension.Extension):
             self, scheduler, *,
             stepper=_default_stepper,
             trigger=(1, 'epoch')):
+        super().__init__()
         self.scheduler = scheduler
         self.trigger = trigger_module.get_trigger(trigger)
         self.stepper = stepper

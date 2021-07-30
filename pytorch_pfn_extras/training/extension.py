@@ -40,7 +40,9 @@ class Extension:
     """
     trigger = 1, 'iteration'
     priority = PRIORITY_READER
-    name: Optional[str] = None
+
+    def __init__(self):
+        self.name: Optional[str] = None
 
     @property
     def default_name(self):
